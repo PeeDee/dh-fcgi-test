@@ -1,0 +1,24 @@
+This project should have all the files necessary to test your Dreamhost support of camping using fcgi.
+
+References:
+   * http://code.whytheluckystiff.net/camping/wiki/CampingOnDreamhost
+   * http://www.mail-archive.com/camping-list@rubyforge.org/msg00114.html
+   * http://wiki.dreamhost.com/Camping
+
+The idea is that you copy these files into a directory, point a Dreamhost domain or sub-domain at that directory, and you are camping.
+
+Steps:
+  1) Download camping gem and dependencies directly from _why site.
+  2) Edit fastcgi.rb in two places.
+  3) Copy these files into a directory on Dreamhost
+  4) Edit dispatch.fcgi for your account name on gem paths
+  5) Point a domain at the script directory
+  6) Hit the url.
+
+WARNING: 
+
+Nothing here works on Dreamhost (for me) as yet...
+
+> camping test.rb # works with either start or serve... but violates DH TOS
+
+http://camping.mydomain.net # doesn't work at all...
