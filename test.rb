@@ -21,8 +21,3 @@ module Test::Views
    end
 
 end
-
-if __FILE__ == $0
-  require 'camping/fastcgi'
-  Camping::FastCGI.start(Test)
-end
